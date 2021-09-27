@@ -1,0 +1,8 @@
+default:
+  custos :
+     host: 'custos.scigap.org'
+     port: '31499'
+     clientId: 'custos-ii8g0cfwsz6ruwezykn9-10002640'
+     clientSec: 'OxXECszt9dL4lHJQyL444UOU0lKN317D51ez067R'
+
+
