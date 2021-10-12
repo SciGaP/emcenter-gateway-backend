@@ -1,0 +1,11 @@
+version: '3.3'
+services:
+  web:
+    image: 'apachecustos/emcenter-gateway-backend:latest'
+    ports:
+      - '3000:3000'
+    environment:
+      CUSTOS_HOST: 'custos.scigap.org'
+      CUSTOS_PORT: '31499'
+      CUSTOS_CLIENT_ID: 'custos-ii8g0cfwsz6ruwezykn9-10002640'
+      CUSTOS_CLIENT_SEC: 'OxXECszt9dL4lHJQyL444UOU0lKN317D51ez067R'

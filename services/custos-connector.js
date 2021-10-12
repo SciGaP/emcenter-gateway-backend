@@ -1,8 +1,7 @@
 const axios = require('axios')
-const yaml_config = require('node-yaml-config');
-const config = yaml_config.load('./services/config/config.dev.yml');
-const baseURL = "https://" + config.custos.host + ":" + config.custos.port + "/"
-const base64Encoded = Buffer.from(config.custos.clientId + ":" + config.custos.clientSec).toString('base64')
+require('dotenv').config();
+const baseURL = "https://" + process.env.CUSTOS_HOST + ":" + process.env.CUSTOS_PORT + "/"
+const base64Encoded = Buffer.from(process.env.CUSTOS_CLIENT_ID + ":" + process.env.CUSTOS_CLIENT_SEC).toString('base64')
 
 const isAuthenticated = async (auth_token) => {
     try {

@@ -1,8 +1,0 @@
-default:
-  custos :
-     host: 'custos.scigap.org'
-     port: '31499'
-     clientId: 'CHANGE_ME'
-     clientSec: 'CHANGE_ME'
-
-
